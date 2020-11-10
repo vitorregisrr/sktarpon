@@ -1,0 +1,49 @@
+.banner-parallax{
+    position: relative;
+    background-color: #ED544C;
+    width: 100vw;
+    height: 480px;
+    overflow: hidden;
+    z-index: 3;
+
+    @media screen and (max-width: $bp-LG){
+        height: 310px;
+    }
+
+    &__element{
+        display: flex;
+        position: absolute;
+        right: 170px;
+
+        @media screen and (max-width: $bp-MD){
+            right: 3px;
+        }
+
+        p{
+            color: #fff;
+            font-size: 36px;
+            margin-right: 30px;
+            text-align: right;
+            max-width: 500px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 18px;
+                padding-left: 5px;
+                margin-right: 0;
+                order: 2;
+                text-align: left;
+                max-width: 240px;
+            }
+        }
+
+        img{
+            width: 300px;
+
+            @media screen and (max-width: $bp-MD){
+                width: 140px;
+                transform: scaleX(-1);
+                margin-left: 3px;
+            }
+        }
+    }
+}
