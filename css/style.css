@@ -378,7 +378,7 @@ b {
 @media screen and (max-width: 992px) {
   .main-nav__inner {
     padding-left: 0px;
-    padding-top: 20px;
+    padding-top: 30px;
     margin-top: 9px;
     text-align: center;
     width: 100vw;
@@ -543,6 +543,12 @@ b {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-nav__toggler.active {
+    transform: translateX(-33px);
+  }
+}
+
 .main-nav__toggler.active div:nth-child(1) {
   transform: rotate(45deg) translateX(45%);
   margin-left: 0;
@@ -606,6 +612,7 @@ b {
 .main-nav__contacts .langs {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 20px;
 }
 

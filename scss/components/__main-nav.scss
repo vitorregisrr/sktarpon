@@ -9,7 +9,7 @@
     font-size: 15px;
     $transition: all 1.4s cubic-bezier(.81,.42,.33,1);
     transition: $transition;
-    
+
     @media screen and (max-width: $bp-LG){
         width: 100vw;
         height: 80px;
@@ -29,7 +29,7 @@
 
         @media screen and (max-width: $bp-LG){
             padding-left: 0px;
-            padding-top: 20px;
+            padding-top: 30px;
             margin-top: 9px;
             text-align: center;
             width: 100vw;
@@ -177,6 +177,10 @@
                 transform: translateX(-60px);
             }
 
+            @media screen and (max-width: $bp-MD){
+                transform: translateX(-33px);
+            }
+
             div{
                 &:nth-child(1){
                     transform: rotate(45deg) translateX(45%);
@@ -246,6 +250,7 @@
         .langs{
             display: flex;
             align-items: center;
+            justify-content: center;
             padding-top: 20px;
 
             .bar{
