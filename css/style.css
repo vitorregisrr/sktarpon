@@ -372,6 +372,7 @@ b {
   transition: all 1.4s cubic-bezier(0.81, 0.42, 0.33, 1);
   color: #fff;
   padding-left: 140px;
+  width: 400px;
   margin-top: 60px;
 }
 
@@ -402,7 +403,6 @@ b {
   background-color: rgba(0, 58, 66, 0.9);
   height: 100vh;
   width: 130px;
-  transition: all 0.4s;
   z-index: 1;
   transition: all 1.4s cubic-bezier(0.81, 0.42, 0.33, 1);
 }

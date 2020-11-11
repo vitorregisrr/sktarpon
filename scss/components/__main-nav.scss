@@ -25,6 +25,7 @@
         transition: $transition;
         color: #fff;
         padding-left: 140px;
+        width: 400px;
         margin-top: 60px;
 
         @media screen and (max-width: $bp-LG){
@@ -51,10 +52,9 @@
         background-color: rgba(0,58,66,.9);
         height: 100vh;
         width: 130px;
-        transition: all 0.4s;
         z-index: 1;
         transition: $transition;
-
+        
         @media screen and (max-width: $bp-LG){
             height: 76px;
             width: 100vw;
