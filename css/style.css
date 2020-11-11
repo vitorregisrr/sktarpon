@@ -1225,11 +1225,11 @@ textarea.form-control {
 }
 
 .home-depoimentos__nav button .owl-nav.chevron-left {
-  background-image: url(../../images/ico/custom-arrow-left.png);
+  background-image: url(../images/ico/custom-arrow-left.png);
 }
 
 .home-depoimentos__nav button .owl-nav.chevron-right {
-  background-image: url(../../images/ico/custom-arrow-right.png);
+  background-image: url(../images/ico/custom-arrow-right.png);
 }
 
 .home-depoimentos__item {
