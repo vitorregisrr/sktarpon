@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>SK Tarpon</title>
+        <title>SK Tarpon • Mais do que uma gestora, um HUB de empreendedorismo.</title>
         <link rel="icon" href="/images/ico/favicon.png"/>
 
         <!-- Load META-TAGS for SEO -->
@@ -76,7 +76,8 @@
     </head>
 
     <body class="wow fadeIn">
-        <main>
+        <!-- partial:../partials/__main-nav.html -->
+        <header>
             <nav class="main-nav wow fadeInLeft" data-wow-delay="0.3s" id="main-nav">
                 <div class="main-nav__bg"></div>
                 <div class="main-nav__content">
@@ -132,65 +133,563 @@
 
                             <div class="langs">
                                 <a href="#" class="active">PT</a>
-                                |
+                                <span class="bar ml-2"></span>
                                 <a href="#">EN</a>
-                                |
+                                <span class="bar"></span>
                                 <a href="#">ESP</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
+        </header>
+        <!-- partial -->
 
+        <main>
             <section id="home-banner" class="home-banner wow fadeIn">
                 <!-- <div
                     class="home-banner__bg"
                     style="background-image: url('../images/bg/home-banner.png');"></div> -->
-                <video class="home-banner__bg" autoplay muted loop id="homeBanner">
+                <video class="home-banner__bg wow zoomIn" autoplay muted loop id="homeBanner">
                     <source src="../images/bg/home-banner-video.mp4" type="video/mp4">
                 </video>
 
-                <a href="#" class="home-banner__more wow fadeInUp" data-wow-delay="0.4s">
+                <a
+                    href="#banner-parallax"
+                    class="home-banner__more wow fadeInUp"
+                    data-wow-delay="0.4s">
                     Veja mais
                     <img src="../images/ico/arrow.png" alt="Seta" class="ico">
                 </a>
 
-                <div class="container-interna position-relative">
+                <div class="container-interna position-relative float">
                     <img
                         src="../images/ico/home-banner-line.svg"
                         alt="Linha com logomarca SK Tarpon"
-                        class="home-banner__line wow zoomIn" data-wow-delay="0.5s">
+                        class="home-banner__line wow zoomIn"
+                        data-wow-delay="0.5s">
                 </div>
             </section>
 
-            <section id="banner-parallax" class="banner-parallax">
-                <div class="container-interna">
+            <section id="banner-parallax" class="banner-parallax" data-wow-offset="130">
+                <div class="container-interna wow fadeInUp" data-wow-offset="100">
                     <div class="banner-parallax__element shape-parallax">
-                        <p>Mais do que uma gestora, um hub de empreendedorismo</p>
+                        <h1 class="desc">Mais do que uma gestora, um hub de embreendedorismo</h1>
                         <img src="../images/ico/grafismo-animado.svg" alt=""></div>
                 </div>
             </section>
 
-
             <section id="home-depoimentos" class="home-depoimentos">
                 <div class="container-interna">
                     <div class="container">
-                        <h2 class="home-depoimentos__title">
+                        <img
+                            src="../images/bg/shape-right.png"
+                            alt="Figura de fundo"
+                            class="bg-shape wow fadeInRight"
+                            data-wow-delay="0.2s">
+                        <h2 class="home-depoimentos__title wow fadeInUp" data-wow-delay="0.4s">
                             Depoimentos
                         </h2>
-                        <div class="home-depoimentos__nav">
-                            <button class="button left">
-                                <img src="../images/ico/custom-arow-left.png" alt="">
-                            </button>
-                            <button class="button right">
-                                <img src="../images/ico/custom-arow-left.png" alt="">
-                            </button>
+                        <div
+                            id="depoimentos-nav"
+                            class="home-depoimentos__nav wow fadeInUp"
+                            data-wow-delay="0.5s"></div>
+
+                        <div
+                            class="owl-carousel owl-default home-depoimentos__carousel wow zoomIn"
+                            data-wow-delay="0.6s">
+                            <div class="item">
+                                <div class="home-depoimentos__item">
+                                    <img class="main-img" src="../images/thumb/woman.jpg" alt="">
+                                    <h3 class="nome">
+                                        Letícia Soofner
+                                    </h3>
+                                    <h4 class="ocupation">
+                                        Loren ipsum
+                                    </h4>
+                                    <p class="desc">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et e”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="home-depoimentos__item">
+                                    <img class="main-img" src="../images/thumb/man.jpg" alt="">
+                                    <h3 class="nome">
+                                        Fábio Henrique
+                                    </h3>
+                                    <h4 class="ocupation">
+                                        Loren ipsum
+                                    </h4>
+                                    <p class="desc">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et e”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="home-depoimentos__item">
+                                    <img class="main-img" src="../images/thumb/man-2.jpg" alt="">
+                                    <h3 class="nome">
+                                        Alexandre Müller
+                                    </h3>
+                                    <h4 class="ocupation">
+                                        Loren ipsum
+                                    </h4>
+                                    <p class="desc">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et e”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="home-depoimentos__item">
+                                    <img class="main-img" src="../images/thumb/woman.jpg" alt="">
+                                    <h3 class="nome">
+                                        Letícia Soofner
+                                    </h3>
+                                    <h4 class="ocupation">
+                                        Loren ipsum
+                                    </h4>
+                                    <p class="desc">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et e”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="home-depoimentos__item">
+                                    <img class="main-img" src="../images/thumb/man.jpg" alt="">
+                                    <h3 class="nome">
+                                        Fábio Henrique
+                                    </h3>
+                                    <h4 class="ocupation">
+                                        Loren ipsum
+                                    </h4>
+                                    <p class="desc">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et e”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="home-depoimentos__item">
+                                    <img class="main-img" src="../images/thumb/man-2.jpg" alt="">
+                                    <h3 class="nome">
+                                        Alexandre Müller
+                                    </h3>
+                                    <h4 class="ocupation">
+                                        Loren ipsum
+                                    </h4>
+                                    <p class="desc">
+                                        “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et e”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="home-feed" class="home-feed">
+                <div class="container-interna">
+                    <div class="container">
+                        <header class="home-feed__header wow fadeInUp" data-wow-delay="0.3s">
+                            <h2 class="title">
+                                Nosso modo de pensar
+                            </h2>
+                            <h3 class="subtitle wow fadeInUp" data-wow-delay="0.5s">
+                                Foco e profundidade nas teses que abraçamos.
+                            </h3>
+                        </header>
+                        <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <article class="home-feed__card wow fadeInUp" data-wow-delay="0.6s">
+                                    <span class="tag">Categoria</span>
+                                    <div class="main-img">
+                                        <img src="../images/thumb/feed-1.png" alt="">
+                                    </div>
+
+                                    <div class="body">
+                                        <small class="date">
+                                            2 dias atrás
+                                        </small>
+                                        <h1 class="title">
+                                            O boom do setor pet em tempos de covid-19
+                                        </h1>
+                                        <p class="desc">
+                                            Ao final de 2018, quando realizamos o investimento na Petlove, tivemos
+                                            supreendentemente
+                                            <a href="#">... ver mais</a>
+                                        </p>
+
+                                        <div class="author">
+                                            <img src="../images/thumb/man.jpg" alt="">
+                                            <p class="name">Pedro Faria</p>
+                                        </div>
+
+                                        <a href="#" class="more">
+                                            <span class="text">Leia mais</span>
+                                            <img class="arrow" src="../images/ico/custom-arrow-2.png" alt="">
+                                        </a>
+
+                                        <div class="social">
+                                            <img src="../images/ico/share.png" alt="Ícone compartilhar" class="share-icon">
+
+                                            <a href="#" title="Facebook">
+                                                <img src="../images/ico/facebook.png" alt="Ícone facebook" class="social-icon">
+                                            </a>
+                                            <a href="#" title="Twitter">
+                                                <img
+                                                    src="../images/ico/twitter.png"
+                                                    alt="Ícone twitter"
+                                                    class="social-icon twitter">
+                                            </a>
+                                            <a href="#" title="Linkedin">
+                                                <img src="../images/ico/linkedin.png" alt="" class="social-icon linkedin">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="home-feed__card mt-3 wow fadeInUp" data-wow-delay="0.6s">
+                                    <span class="tag">Categoria</span>
+
+                                    <div class="body pt-5">
+                                        <small class="date">
+                                            2 dias atrás
+                                        </small>
+                                        <h1 class="title">
+                                            O boom do setor pet em tempos de covid-19
+                                        </h1>
+                                        <p class="desc">
+                                            Ao final de 2018, quando realizamos o investimento na Petlove, tivemos
+                                            supreendentemente
+                                            <a href="#">... ver mais</a>
+                                        </p>
+
+                                        <div class="author">
+                                            <img src="../images/thumb/man.jpg" alt="">
+                                            <p class="name">Pedro Faria</p>
+                                        </div>
+
+                                        <a href="#" class="more">
+                                            <span class="text">Leia mais</span>
+                                            <img class="arrow" src="../images/ico/custom-arrow-2.png" alt="">
+                                        </a>
+
+                                        <div class="social">
+                                            <img src="../images/ico/share.png" alt="Ícone compartilhar" class="share-icon">
+
+                                            <a href="#" title="Facebook">
+                                                <img src="../images/ico/facebook.png" alt="Ícone facebook" class="social-icon">
+                                            </a>
+                                            <a href="#" title="Twitter">
+                                                <img
+                                                    src="../images/ico/twitter.png"
+                                                    alt="Ícone twitter"
+                                                    class="social-icon twitter">
+                                            </a>
+                                            <a href="#" title="Linkedin">
+                                                <img src="../images/ico/linkedin.png" alt="" class="social-icon linkedin">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mt-3 mt-lg-0">
+                                <article class="home-feed__card mb-3 wow fadeInUp" data-wow-delay="0.6s">
+                                    <span class="tag">Categoria</span>
+
+                                    <div class="body pt-5">
+                                        <small class="date">
+                                            2 dias atrás
+                                        </small>
+                                        <h1 class="title">
+                                            O boom do setor pet em tempos de covid-19
+                                        </h1>
+                                        <p class="desc">
+                                            Ao final de 2018, quando realizamos o investimento na Petlove, tivemos
+                                            supreendentemente
+                                            <a href="#">... ver mais</a>
+                                        </p>
+
+                                        <div class="author">
+                                            <img src="../images/thumb/man.jpg" alt="">
+                                            <p class="name">Pedro Faria</p>
+                                        </div>
+
+                                        <a href="#" class="more">
+                                            <span class="text">Leia mais</span>
+                                            <img class="arrow" src="../images/ico/custom-arrow-2.png" alt="">
+                                        </a>
+
+                                        <div class="social">
+                                            <img src="../images/ico/share.png" alt="Ícone compartilhar" class="share-icon">
+
+                                            <a href="#" title="Facebook">
+                                                <img src="../images/ico/facebook.png" alt="Ícone facebook" class="social-icon">
+                                            </a>
+                                            <a href="#" title="Twitter">
+                                                <img
+                                                    src="../images/ico/twitter.png"
+                                                    alt="Ícone twitter"
+                                                    class="social-icon twitter">
+                                            </a>
+                                            <a href="#" title="Linkedin">
+                                                <img src="../images/ico/linkedin.png" alt="" class="social-icon linkedin">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="home-feed__card wow fadeInUp" data-wow-delay="0.6s">
+                                    <span class="tag">Categoria</span>
+                                    <div class="main-img">
+                                        <img src="../images/thumb/feed-2.png" alt="">
+                                    </div>
+
+                                    <div class="body">
+                                        <small class="date">
+                                            2 dias atrás
+                                        </small>
+                                        <h1 class="title">
+                                            Omega digitaliza a venda de energia
+                                        </h1>
+                                        <p class="desc">
+                                            A Omega Geração acaba de lançar uma plataforma digital de compra de energia —
+                                            criando um novo canal de vend
+                                            <a href="#">... ver mais</a>
+                                        </p>
+
+                                        <div class="author">
+                                            <img src="../images/thumb/man.jpg" alt="">
+                                            <p class="name">Pedro Faria</p>
+                                        </div>
+
+                                        <a href="#" class="more">
+                                            <span class="text">Leia mais</span>
+                                            <img class="arrow" src="../images/ico/custom-arrow-2.png" alt="">
+                                        </a>
+
+                                        <div class="social">
+                                            <img src="../images/ico/share.png" alt="Ícone compartilhar" class="share-icon">
+
+                                            <a href="#" title="Facebook">
+                                                <img src="../images/ico/facebook.png" alt="Ícone facebook" class="social-icon">
+                                            </a>
+                                            <a href="#" title="Twitter">
+                                                <img
+                                                    src="../images/ico/twitter.png"
+                                                    alt="Ícone twitter"
+                                                    class="social-icon twitter">
+                                            </a>
+                                            <a href="#" title="Linkedin">
+                                                <img src="../images/ico/linkedin.png" alt="" class="social-icon linkedin">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-xl-4 mt-3 mt-xl-0">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-12">
+                                        <ul class="home-feed__list wow fadeInUp" data-wow-delay="0.3s">
+                                            <li class="header">
+                                                Quem fala?
+                                            </li>
+                                            <li class="author">
+                                                <img src="../images/thumb/man.jpg" alt="">
+                                                <p class="name">Pedro Faria</p>
+                                            </li>
+                                            <li class="author">
+                                                <img src="../images/thumb/man.jpg" alt="">
+                                                <p class="name">Pedro Faria</p>
+                                            </li>
+                                            <li class="author">
+                                                <img src="../images/thumb/man.jpg" alt="">
+                                                <p class="name">Pedro Faria</p>
+                                            </li>
+                                            <li class="author">
+                                                <img src="../images/thumb/man.jpg" alt="">
+                                                <p class="name">Pedro Faria</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <ul class="home-feed__list wow fadeInUp" data-wow-delay="0.3s">
+                                            <li class="header">
+                                                Os mais lidos
+                                            </li>
+
+                                            <li class="noticia">
+                                                <div class="main-img">
+                                                    <img src="../images/thumb/feed-1.png" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consetetu</p>
+                                                    <small>2 dias atrás</small>
+                                                </div>
+                                            </li>
+
+                                            <li class="noticia">
+                                                <div class="main-img">
+                                                    <img src="../images/thumb/feed-1.png" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consetetu</p>
+                                                    <small>2 dias atrás</small>
+                                                </div>
+                                            </li>
+
+                                            <li class="noticia">
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consetetu</p>
+                                                    <small>2 dias atrás</small>
+                                                </div>
+                                            </li>
+
+                                            <li class="noticia">
+                                                <div class="main-img">
+                                                    <img src="../images/thumb/feed-1.png" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consetetu</p>
+                                                    <small>2 dias atrás</small>
+                                                </div>
+                                            </li>
+
+                                            <li class="noticia">
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consetetu</p>
+                                                    <small>2 dias atrás</small>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <ul class="home-feed__list wow fadeInUp" data-wow-delay="0.3s">
+                                            <li class="header">
+                                                Categorias
+                                            </li>
+                                            <!-- Colocar dois em cada <li> -->
+                                            <li class="categoria">
+                                                <a href="#">Loren ipsum</a>
+                                                <a href="#">Loren</a>
+                                            </li>
+                                            <li class="categoria">
+                                                <a href="#">Loren</a>
+                                                <a href="#">Loren ipsum dolor</a>
+                                            </li>
+                                            <li class="categoria">
+                                                <a href="#">Loren ipsum</a>
+                                                <a href="#">Loren ipsum</a>
+                                            </li>
+                                            <li class="categoria">
+                                                <a href="#">Loren</a>
+                                                <a href="#">Loren ipsum dolor</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-1 pt-lg-5 d-flex justify-content-start">
+                            <a href="#" class="more-2 wow zoomIn" data-wow-delay="0.3s">
+                                <span class="text">Veja +</span>
+                                <img class="arrow" src="../images/ico/custom-arrow-2.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <button class="scroll-top"></button>
+
+        <!-- partial:../partials/__footer.html -->
+
+        <footer class="main-footer wow fadeInUp" data-wow-delay="0.3s">
+            <div class="container-interna">
+                <div class="container">
+                    <button class="scroll-top"></button>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img class="main-img" src="../images/ico/logo-footer.svg" alt="">
+                            </a>
+
+                            <h3 class="mt-2 mt-lg-4">
+                                +55 11 3074-5800
+                                <br/>
+                                comercial@tarpon.com.br
+                            </h3>
+
+                            <p class="mb-1 pt-2 mt-lg-4">
+                                Av. Magalhães de Castro, 4800
+                            </p>
+                            <p class="mb-1">
+                                Torre 1, 12º andar
+                            </p>
+                            <p class="mb-1">
+                                São Paulo - SP - CEP 05679-010
+                            </p>
+                        </div>
+                        <div class="col-md-8 right-content">
+                            <h4 class="pt-3 pt-lg-5 mt-lg-4">
+                                Imprensa
+                            </h4>
+
+                            <h3 class="pt-2 pt-lg-5">
+                                Loures Consultoria
+                            </h3>
+                            <p>
+                                sktarpon@loures.com.br
+                            </p>
+
+                            <div class="row pt-2 pt-lg-4">
+                                <div class="col-lg-6">
+                                    <h6>
+                                        Carolina devidé
+                                    </h6>
+                                    <p class="mb-0">
+                                        caroline.devide@loures.com.br
+                                        <br/>
+                                        11 99310-0555
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 mt-2 mt-lg-0">
+                                    <h6>
+                                        Thais de Araujo
+                                    </h6>
+                                    <p class="mb-0">
+                                        thais.araujo@loures.com.br<br/>
+                                        11 99137-0064
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- -->
 
         <!-- partial -->
 

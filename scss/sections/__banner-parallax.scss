@@ -15,16 +15,34 @@
         position: absolute;
         right: 170px;
 
-        @media screen and (max-width: $bp-MD){
-            right: 3px;
+        @media screen and (max-width: 1300px){
+            right: 70px;
+            padding-top: 20px;
         }
 
-        p{
+        @media screen and (max-width: $bp-LG){
+            right: 50px;
+            padding-top: 60px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            left: 6px;
+            right: unset;
+            padding-top: 20px;
+        }
+
+        .desc{
             color: #fff;
             font-size: 36px;
+            font-weight: 400;
             margin-right: 30px;
             text-align: right;
             max-width: 500px;
+
+            @media screen and (max-width: 1200px){
+                font-size: 30px;
+                max-width: 400px;
+            }
 
             @media screen and (max-width: $bp-MD){
                 font-size: 18px;
@@ -34,10 +52,19 @@
                 text-align: left;
                 max-width: 240px;
             }
+
         }
 
         img{
             width: 300px;
+
+            @media screen and (max-width: 1300px){
+                width: 270px;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                width: 230px;
+            }
 
             @media screen and (max-width: $bp-MD){
                 width: 140px;

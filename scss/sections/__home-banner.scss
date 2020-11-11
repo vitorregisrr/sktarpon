@@ -16,33 +16,43 @@
         z-index: -1;
     }
 
-    &__line{
+    &__line {
         position: absolute;
         left: 0;
         top: 45vh;
-        left: 270px;
+        left: 250px;
         width: 190px;
-
-        @media screen and (min-height: 860px){
-            top: 53vh;
+        @media screen and (max-width: 1300px) {
+            left: 150px;
+        }
+        @media screen and (max-width: 1180px){
+            width: 140px;
+            top: 50vh;
         }
 
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: $bp-LG){
+            width: 130px;
+            top: 55vh;
+            left: 40px;
+        }
+
+        @media screen and (min-height: 860px) {
+            top: 53vh;
+        }
+        @media screen and (max-width: $bp-SM) {
             left: 20px;
             width: 90px;
             top: 70vh;
         }
-
-        @media screen and (max-height: 668px) and (max-width: $bp-MD){
+        @media screen and (max-height: 668px) and (max-width: $bp-SM) {
             top: 65vh;
         }
-
-        @media screen and (max-height: 580px) and (max-width: $bp-MD){
+        @media screen and (max-height: 580px) and (max-width: $bp-SM) {
             top: 58vh;
         }
     }
 
-    &__more{
+    &__more {
         position: absolute;
         bottom: 0;
         right: 190px;
@@ -59,23 +69,24 @@
         letter-spacing: 0.4px;
         font-weight: 300;
         transition: all 0.4s;
-
-        @media screen and (max-width: $bp-MD){
+        @media screen and (max-width: 1300px) {
+            right: 130px;
+        }
+        @media screen and (max-width: $bp-SM) {
             right: 40px;
             font-size: 16px;
             padding: 35px 13px;
 
-            .ico{
+            .ico {
                 width: 12px;
             }
         }
-        
-        &:hover{
+        &:hover {
             color: #fff;
             font-size: 19px;
         }
-        
-        .ico{
+
+        .ico {
             width: 14px;
             margin-left: -1px;
             margin-top: 5px;

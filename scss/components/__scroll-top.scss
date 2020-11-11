@@ -1,10 +1,10 @@
 .scroll-top{
     position: absolute;
-    right: 130px;
-    bottom: 430px;
-    width: 35px;
-    height: 35px;
-    background-image: url(../images/ico/scrolltop.png);
+    right: 80px;
+    top: -10px;
+    width: 62px;
+    height: 62px;
+    background-image: url(../../images/ico/scroll-top.png);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 5;
@@ -13,6 +13,10 @@
     cursor: pointer;
     @include transition();
     opacity: 0;
+    
+    @media screen and (max-width: $bp-XL){
+        right: 20px;
+    }
 
     &.show{
         opacity: 1;
@@ -26,12 +30,9 @@
     }
 
     @media screen and (max-width: $bp-MD){
-        position: fixed;
-        right: 50px;
-        bottom: 100px;
-    }
-
-    @media screen and (min-width: 1000px) and (max-width: 1450px){
-        right: 25px;
+        right: 30px;
+        top: 20px;
+        width: 47px;
+        height: 47px;
     }
 }

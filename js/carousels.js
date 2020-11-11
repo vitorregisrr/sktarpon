@@ -2,23 +2,36 @@
     'use strict';
 
     // Home Carousel //
-    const carousel = $(".owl-carousel.cursos-carousel__carousel");
-    carousel.owlCarousel({
-        loop: false,
+    const depsCarousel = $(".owl-carousel.home-depoimentos__carousel");
+    depsCarousel.owlCarousel({
+        loop: true,
         margin: 0,
-        items: 1,
-        center: true,
-        dots: true,
+        items: 3,
+        center: false,
+        dots: false,
         nav: true,
         navText: [
             "<i class='owl-nav chevron-left'>", "<i class='owl-nav chevron-right'>"
         ],
-        slideBy: "page",
+        navContainer: '#depoimentos-nav',
+        slideBy: 3,
         dragEndSpeed: 700,
-        smartSpeed: 1e3,
+        smartSpeed: 500,
         startPosition: 0,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn'
+        responsive: {
+            0: {
+                slideBy: 1,
+                items: 1
+            },
+            600: {
+                slideBy: 2,
+                items: 2
+            },
+            900: {
+                slideBy: 3,
+                items: 3
+            }
+        }
     });
 
     window.dispatchEvent(new Event('resize'));
