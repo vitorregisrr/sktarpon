@@ -13,6 +13,7 @@
         margin-bottom: 70px;
         width: 100%;
         padding-left: 80px;
+        
 
         @media screen and (max-width: $bp-LG) {
             font-size: 21px;
@@ -20,6 +21,10 @@
             padding-right: 20px;
             margin-bottom: 50px;
             padding-top: 35px;
+        }
+
+        @media screen and (min-height: 900px){
+            max-width: 450px;
         }
 
         p {

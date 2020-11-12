@@ -1710,6 +1710,18 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-height: 900px) {
+  .interna-header__caption {
+    padding-top: 300px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .interna-header__caption {
+    padding-left: 100px;
+  }
+}
+
 .interna-header__caption .title {
   position: relative;
   font-size: 84px;
@@ -1737,6 +1749,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-height: 900px) {
+  .interna-header__caption .title {
+    font-size: 70px;
+  }
+}
+
 .interna-header__caption .title .shape-top {
   position: absolute;
   left: -140px;
@@ -1759,6 +1777,14 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-height: 900px) {
+  .interna-header__caption .title .shape-top {
+    width: 130px;
+    left: -80px;
+    top: -84px;
+  }
+}
+
 .interna-header__caption .subtitle {
   font-size: 70px;
   font-weight: lighter;
@@ -1775,6 +1801,13 @@ textarea.form-control {
 @media screen and (max-width: 768px) {
   .interna-header__caption .subtitle {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .interna-header__caption .subtitle {
+    max-width: 430px;
+    font-size: 45px;
   }
 }
 
@@ -1805,6 +1838,12 @@ textarea.form-control {
     padding-right: 20px;
     margin-bottom: 50px;
     padding-top: 35px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .nosso-dna__main-desc {
+    max-width: 450px;
   }
 }
 

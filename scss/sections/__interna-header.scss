@@ -34,6 +34,14 @@
             padding-top: 240px;
         }
 
+        @media screen and (min-height: 900px){
+            padding-top: 300px;
+        }
+
+        @media screen and (min-height: 900px){
+            padding-left: 100px;
+        }
+
         .title {
             position: relative;
             font-size: 84px;
@@ -54,6 +62,10 @@
                font-size: 60px;
             }
 
+            @media screen and (min-height: 900px){
+                font-size: 70px;
+            }
+
             .shape-top {
                 position: absolute;
                 left: -140px;
@@ -70,6 +82,12 @@
                     left: -53px;
                     top: -60px;
                 }
+
+                @media screen and (min-height: 900px){
+                    width: 130px;
+                    left: -80px;
+                    top: -84px;
+                }
             }
         }
 
@@ -85,6 +103,11 @@
 
             @media screen and (max-width: $bp-MD){
                 font-size: 32px;
+            }
+
+            @media screen and (min-height: 900px){
+                max-width: 430px;
+                font-size: 45px;
             }
         }
     }
