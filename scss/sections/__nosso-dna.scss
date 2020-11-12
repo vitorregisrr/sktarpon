@@ -82,7 +82,9 @@
             width: 230px;
 
             @media screen and (max-width: $bp-LG) {
-                width: 80px;
+                width: 55px;
+                left: 0;
+                bottom: -28px;
             }
         }
 
@@ -93,7 +95,8 @@
             width: 210px;
 
             @media screen and (max-width: $bp-LG) {
-                width: 80px;
+                width: 60px;
+                top: -10px;
             }
         }
 
@@ -109,7 +112,8 @@
             }
 
             @media screen and (max-width: $bp-LG) {
-                width: 80px;
+                width: 120px;
+                right: -60px;
             }
         }
 
@@ -126,6 +130,8 @@
 
             @media screen and (max-width: $bp-LG) {
                 width: 80px;
+                left: -60px;
+                top: 20px;
             }
         }
 
