@@ -27,7 +27,7 @@
                 slideBy: 2,
                 items: 2
             },
-            900: {
+            1025: {
                 slideBy: 3,
                 items: 3
             }
