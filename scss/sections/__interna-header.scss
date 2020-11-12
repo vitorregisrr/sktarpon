@@ -1,0 +1,91 @@
+.interna-header {
+    height: 108vh;
+    min-height: 600px;
+    background-size: cover;
+
+    @media screen and (max-width: $bp-MD) {
+        height: 100vh;
+    }
+
+    &__caption {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 240px;
+        padding-top: 240px;
+        color: #fff;
+
+        @media screen and (max-width: $bp-XL){
+            padding-left: 200px;
+            padding-top: 220px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            padding-left: 95px;
+            padding-top: 230px;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            padding-left: 70px;
+            padding-top: 200px;
+        }
+
+        @media screen and (min-width: 380px) and (max-width: 430px){
+            padding-top: 240px;
+        }
+
+        .title {
+            position: relative;
+            font-size: 84px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: -14px;
+
+            @media screen and (max-width: $bp-XL){
+                font-size: 78px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 54px;
+                margin-bottom: -5px;
+            }
+
+            @media screen and (min-width: 380px) and (max-width: 430px){
+               font-size: 60px;
+            }
+
+            .shape-top {
+                position: absolute;
+                left: -140px;
+                top: -120px;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 160px;
+                    left: -110px;
+                    top: -100px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    width: 100px;
+                    left: -53px;
+                    top: -60px;
+                }
+            }
+        }
+
+        .subtitle {
+            font-size: 70px;
+            font-weight: lighter;
+            padding-right: 50px;
+
+            @media screen and (max-width: $bp-XL){
+                font-size: 60px;
+                padding-right: 20px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 32px;
+            }
+        }
+    }
+}

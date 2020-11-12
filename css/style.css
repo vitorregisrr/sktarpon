@@ -853,7 +853,13 @@ textarea.form-control {
 
 .main-footer h4 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-footer h4 {
+    font-size: 24px;
+  }
 }
 
 .main-footer h6 {
@@ -1654,6 +1660,395 @@ textarea.form-control {
   width: 36px;
   opacity: 0;
   transition: all 0.4s;
+}
+
+.interna-header {
+  height: 108vh;
+  min-height: 600px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .interna-header {
+    height: 100vh;
+  }
+}
+
+.interna-header__caption {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 240px;
+  padding-top: 240px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .interna-header__caption {
+    padding-left: 200px;
+    padding-top: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .interna-header__caption {
+    padding-left: 95px;
+    padding-top: 230px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interna-header__caption {
+    padding-left: 70px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 430px) {
+  .interna-header__caption {
+    padding-top: 240px;
+  }
+}
+
+.interna-header__caption .title {
+  position: relative;
+  font-size: 84px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: -14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .interna-header__caption .title {
+    font-size: 78px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interna-header__caption .title {
+    font-size: 54px;
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 430px) {
+  .interna-header__caption .title {
+    font-size: 60px;
+  }
+}
+
+.interna-header__caption .title .shape-top {
+  position: absolute;
+  left: -140px;
+  top: -120px;
+}
+
+@media screen and (max-width: 1200px) {
+  .interna-header__caption .title .shape-top {
+    width: 160px;
+    left: -110px;
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interna-header__caption .title .shape-top {
+    width: 100px;
+    left: -53px;
+    top: -60px;
+  }
+}
+
+.interna-header__caption .subtitle {
+  font-size: 70px;
+  font-weight: lighter;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .interna-header__caption .subtitle {
+    font-size: 60px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interna-header__caption .subtitle {
+    font-size: 32px;
+  }
+}
+
+.nosso-dna {
+  max-width: 100vw;
+  overflow: hidden;
+  margin-bottom: -30px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna {
+    margin-bottom: 10px;
+  }
+}
+
+.nosso-dna__main-desc {
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 70px;
+  width: 100%;
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__main-desc {
+    font-size: 21px;
+    padding-left: 13px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    padding-top: 35px;
+  }
+}
+
+.nosso-dna__main-desc p {
+  max-width: 610px;
+}
+
+.nosso-dna__sub-header {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 17px;
+  padding-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header {
+    width: 94% !important;
+    padding-bottom: 15px;
+    padding-top: 14px;
+  }
+}
+
+.nosso-dna__sub-header.blue {
+  justify-content: flex-start;
+  background-color: #014852;
+  padding-left: 80px;
+  width: 78%;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header.blue {
+    padding-left: 20px;
+  }
+}
+
+.nosso-dna__sub-header.orange {
+  justify-content: flex-start;
+  background-color: #ED544C;
+  padding-left: 280px;
+  padding-right: 60px;
+  width: 83%;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header.orange {
+    padding-left: 20px;
+  }
+}
+
+.nosso-dna__sub-header .shape-obt,
+.nosso-dna__sub-header .shape-obt-2,
+.nosso-dna__sub-header .shape-simple,
+.nosso-dna__sub-header .shape-simple-2 {
+  position: absolute;
+}
+
+.nosso-dna__sub-header .shape-simple {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  width: 230px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header .shape-simple {
+    width: 80px;
+  }
+}
+
+.nosso-dna__sub-header .shape-simple-2 {
+  position: absolute;
+  right: 0;
+  top: -120px;
+  width: 210px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header .shape-simple-2 {
+    width: 80px;
+  }
+}
+
+.nosso-dna__sub-header .shape-obt {
+  position: absolute;
+  right: -40px;
+  bottom: 50px;
+  width: 380px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-header .shape-obt {
+    width: 280px;
+    right: -70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header .shape-obt {
+    width: 80px;
+  }
+}
+
+.nosso-dna__sub-header .shape-obt-2 {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 350px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-header .shape-obt-2 {
+    left: -90px;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header .shape-obt-2 {
+    width: 80px;
+  }
+}
+
+.nosso-dna__sub-header .number {
+  font-size: 263px;
+  line-height: 1;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-header .number {
+    font-size: 210px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header .number {
+    font-size: 90px;
+  }
+}
+
+.nosso-dna__sub-header .title {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-header .title {
+    font-size: 37px;
+    margin-bottom: 35px;
+    width: 280px;
+    right: -70px;
+  }
+  .nosso-dna__sub-header .title.txt-lg br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-header .title {
+    font-size: 26px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .nosso-dna__sub-header .title br {
+    display: none;
+  }
+}
+
+.nosso-dna__sub-desc {
+  font-size: 28px;
+  padding-top: 20px;
+  margin-bottom: 90px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-desc {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+.nosso-dna__sub-desc.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 120px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-desc.right {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-desc.right {
+    padding-right: 24%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nosso-dna__sub-desc.right {
+    padding-right: 0;
+  }
+}
+
+.nosso-dna__sub-desc.left {
+  padding-left: 270px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-desc.left {
+    padding-left: 240px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-dna__sub-desc.left {
+    padding-left: 0;
+  }
+}
+
+.nosso-dna__sub-desc p {
+  max-width: 610px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-dna__sub-desc p {
+    max-width: 430px;
+  }
 }
 
 body {
