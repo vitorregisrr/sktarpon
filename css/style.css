@@ -1052,6 +1052,8 @@ textarea.form-control {
 
 .banner-parallax__element {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: absolute;
   right: 170px;
 }
