@@ -1786,9 +1786,9 @@ textarea.form-control {
 }
 
 .interna-header__caption .subtitle {
-  font-size: 70px;
+  font-size: 67px;
   font-weight: lighter;
-  padding-right: 50px;
+  padding-right: 80px;
 }
 
 @media screen and (max-width: 1200px) {
