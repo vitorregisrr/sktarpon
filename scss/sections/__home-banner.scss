@@ -39,6 +39,11 @@
         @media screen and (min-height: 860px) {
             top: 53vh;
         }
+
+        @media screen and (min-height: 1200px) {
+            top: 74vh;
+        }
+
         @media screen and (max-width: $bp-SM) {
             left: 20px;
             width: 90px;

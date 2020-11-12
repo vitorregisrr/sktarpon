@@ -962,6 +962,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-height: 1200px) {
+  .home-banner__line {
+    top: 74vh;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .home-banner__line {
     left: 20px;
