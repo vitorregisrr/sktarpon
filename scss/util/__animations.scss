@@ -78,3 +78,27 @@
 
   }
 }
+
+
+.float{
+  animation: float 6s infinite;
+  
+  &--fast{
+    animation-duration: 4.6s;
+    animation-delay: 4.6s;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+
+	50% {
+		transform: translatey(-15px);
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+}

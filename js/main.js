@@ -16,6 +16,17 @@
         }
     });
 
+     //Smooth Scrooling
+     $('a[href*=\\#]:not([href$=\\#])').click(function () {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href'))
+                .offset()
+                .top - 300
+        }, 500);
+    });
+
     scrollTopBtn.on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({

@@ -1,3 +1,128 @@
 .home-depoimentos{
-    max-width: 100vw;
+    width: 100vw;
+    position: relative;
+    z-index: 4;
+    padding: 100px 0 82px 0;
+    position: relative;
+    background-color: #F2F2F2;
+
+    @media screen and (max-width: $bp-MD){
+        padding: 60px 0;
+        padding-bottom: 40px;
+    }
+
+    .bg-shape{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 160px;
+
+        @media screen and (max-width: $bp-MD){
+            width: 80px;
+        }
+    }
+
+    &__title{
+        font-size: 35px;
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__carousel{
+        width: 100%;
+    }
+
+    &__nav{
+        display: flex;
+        position: absolute;
+        right: 200px;
+        top: -38px;
+
+        @media screen and (max-width: $bp-MD){
+            right: 10px;
+            top: -33px;
+        }
+
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 0 4px;
+            background-color: #fff;
+            border: 1.4px solid $color-primary;
+            transition: all 0.4s;
+
+            @media screen and (max-width: $bp-MD){
+                width: 65px;
+                height: 65px;
+            }
+
+            &:focus, &:active{
+                outline: none;
+            }
+
+            &:hover{
+                @include scale(1.05);
+            }
+
+            .owl-nav{
+                display: block;
+                background-position: center center;
+                background-repeat: no-repeat;
+                width: 80% !important;
+                height: 80% !important;
+
+                &.chevron-left{
+                    background-image: url(../images/ico/custom-arrow-left.png);
+                }
+    
+                &.chevron-right{
+                    background-image: url(../images/ico/custom-arrow-right.png);
+                }
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .main-img{
+            display: block;
+            width: 110px !important;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1.4px solid $color-primary;
+            margin-bottom: 19px;
+        }
+
+        .nome{
+            color: $color-secondary;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .ocupation{
+            font-weight: bold;
+            color: #484848;
+            font-size: 19px;
+        }
+
+        .desc{
+            font-size: 17px;
+            max-width: 270px;
+        }
+    }
 }
