@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card {
   background-color: #fff;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.116);
@@ -2094,6 +2095,398 @@ textarea.form-control {
   .nosso-dna__sub-desc p {
     max-width: 430px;
   }
+}
+
+.nosso-time {
+  position: relative;
+  overflow: hidden;
+}
+
+.nosso-time .shape-top {
+  position: absolute;
+  top: -82px;
+  right: 0;
+  width: 94%;
+  opacity: 0.8;
+}
+
+.nosso-time__content {
+  position: relative;
+  z-index: 4;
+  padding-left: 30px;
+  padding-top: 163px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__content {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+}
+
+.nosso-time__item {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.nosso-time__item:hover .main-img .overlay {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.nosso-time__item:hover .main-img > img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.nosso-time__item .main-img {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  .nosso-time__item .main-img {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-time__item .main-img {
+    height: 390px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__item .main-img {
+    height: 370px;
+  }
+}
+
+.nosso-time__item .main-img > img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in;
+  z-index: 2;
+}
+
+.nosso-time__item .main-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in;
+  z-index: 3;
+}
+
+.nosso-time__item .main-img .overlay .more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #014852;
+  text-align: center;
+  padding: 27px 0;
+  width: 120px;
+  height: 120px;
+  font-weight: 400;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .nosso-time__item .main-img .overlay .more {
+    padding: 13px 0;
+  }
+}
+
+.nosso-time__item .main-img .overlay .more:hover .arrow {
+  opacity: 1;
+}
+
+.nosso-time__item .main-img .overlay .more:hover .text {
+  margin-right: 10px;
+}
+
+.nosso-time__item .main-img .overlay .more .text {
+  display: block;
+  font-size: 30px;
+  color: #014852;
+  transition: all 0.4s;
+  margin-bottom: 9;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .nosso-time__item .main-img .overlay .more .text {
+    font-size: 24px;
+  }
+}
+
+.nosso-time__item .main-img .overlay .more .arrow {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 52px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.nosso-time__item .nome {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ED544C;
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+
+.nosso-time__item .cargo {
+  font-size: 25px;
+  color: #484848;
+  line-height: 1.1;
+}
+
+.nosso-time__modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal {
+    overflow-y: auto;
+  }
+}
+
+.nosso-time__modal[data-visible="true"] {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nosso-time__modal .shape-left {
+  position: absolute;
+  bottom: -380px;
+  left: 63px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .shape-left {
+    width: 20px;
+    bottom: -350px;
+    left: unset;
+    right: 60px;
+  }
+}
+
+.nosso-time__modal .close {
+  position: absolute;
+  z-index: 4;
+  right: 57px;
+  top: 35px;
+  height: 42px;
+  width: 42px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/ico/close.png");
+  opacity: 1 !important;
+  transition: all 0.4s;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .close {
+    height: 30px;
+    width: 30px;
+    right: 21px;
+    top: 24px;
+  }
+}
+
+.nosso-time__modal .close:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.nosso-time__modal .right {
+  background-color: #ED544C;
+  height: 100%;
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 992px) and (max-height: 680px) {
+  .nosso-time__modal .right {
+    padding-top: 30px;
+  }
+}
+
+.nosso-time__modal .right .depoimento {
+  position: relative;
+  font-size: 35px;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .right .depoimento {
+    font-size: 22px;
+    padding: 0 40px;
+    padding-bottom: 80px;
+  }
+}
+
+.nosso-time__modal .right .depoimento::after {
+  content: "“";
+  position: absolute;
+  left: -170px;
+  top: -130px;
+  color: #014852;
+  font-size: 310px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .right .depoimento::after {
+    font-size: 120px;
+    top: -20px;
+    left: 20px;
+  }
+}
+
+.nosso-time__modal .right .depoimento::before {
+  content: "”";
+  position: absolute;
+  right: 160px;
+  bottom: -170px;
+  color: #014852;
+  font-size: 230px;
+  font-weight: bold;
+  line-height: 0;
+  font-style: normal;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .right .depoimento::before {
+    font-size: 120px;
+    bottom: 40px;
+    right: 30px;
+  }
+}
+
+.nosso-time__modal .right .depoimento p {
+  max-width: 480px;
+}
+
+.nosso-time__modal .content {
+  height: 100%;
+  overflow: hidden;
+  padding-left: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .content {
+    padding-left: 0;
+    height: auto;
+  }
+}
+
+.nosso-time__modal .content .about {
+  padding-top: 70px;
+}
+
+@media screen and (max-height: 680px) {
+  .nosso-time__modal .content .about {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .content .about {
+    overflow-y: auto;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
+
+.nosso-time__modal .content .nome {
+  font-size: 39px;
+  font-weight: bold;
+  color: #ED544C;
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+
+.nosso-time__modal .content .cargo {
+  font-size: 25px;
+  color: #484848;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.nosso-time__modal .content .desc {
+  font-size: 18px;
+  max-width: 380px;
+}
+
+.nosso-time__modal .content .desc p {
+  margin-bottom: 23px;
+}
+
+.nosso-time__modal .content .social {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .content .social {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.nosso-time__modal .content .social img {
+  width: 40px;
+  transition: all 0.4s;
+}
+
+.nosso-time__modal .content .social img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 body {
