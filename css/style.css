@@ -2500,17 +2500,17 @@ textarea.form-control {
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
-  .carreiras {
-    margin-bottom: 60px;
-  }
-}
-
 .carreiras .shape-right {
   position: absolute;
   right: 0;
   top: 320px;
   width: 180px;
+}
+
+@media screen and (max-width: 992px) {
+  .carreiras .shape-right {
+    width: 140px;
+  }
 }
 
 .carreiras__banner {
@@ -2574,6 +2574,7 @@ textarea.form-control {
 .carreiras__form {
   padding-top: 15px;
   max-width: 450px;
+  padding-bottom: 80px;
 }
 
 @media screen and (max-width: 992px) {
