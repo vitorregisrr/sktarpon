@@ -2294,10 +2294,7 @@ textarea.form-control {
 
 @media screen and (max-width: 992px) {
   .nosso-time__modal .shape-left {
-    width: 20px;
-    bottom: -350px;
-    left: unset;
-    right: 60px;
+    display: none;
   }
 }
 
@@ -2311,7 +2308,7 @@ textarea.form-control {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../../images/ico/close.png");
+  background-image: url("../images/ico/close.png");
   opacity: 1 !important;
   transition: all 0.4s;
   outline: none !important;
