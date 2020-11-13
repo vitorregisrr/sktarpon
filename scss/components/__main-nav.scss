@@ -227,10 +227,15 @@
     }
 
     &__contacts {
-        padding-top: 34px;
+        padding-top: 64px;
 
+        @media screen and (max-width: $bp-LG){
+            padding-top: 30px;
+        }
+        
         .langs {
             padding-top: 20px;
+
             @media screen and (max-width: $bp-LG) {
                 display: flex;
                 align-items: center;
