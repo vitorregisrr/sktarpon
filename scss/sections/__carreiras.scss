@@ -1,0 +1,153 @@
+.carreiras{
+    position: relative;
+
+    @media screen and (max-width: $bp-LG){
+        margin-bottom: 60px;
+    }
+
+    .shape-right{
+        position: absolute;
+        right: 0;
+        top: 320px;
+        width: 180px;
+    }
+
+    &__banner{
+        background-color: $color-secondary;
+        width: 82%;
+        margin: 50px 0;
+        padding: 44px 40px;
+        padding-left: 55px;
+        margin-left: auto;
+
+        @media screen and (max-width: $bp-LG){
+            width: 95%;
+            padding: 20px;
+            margin: 20px 0;
+            margin-left: auto;
+        }
+       
+        .title{
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            max-width: 550px;
+            line-height: 1.5;
+            margin-bottom: 0;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 21px;
+            }
+        }
+    }
+
+    .content{
+        padding-left: 31px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-left: 0;
+        }
+    }
+
+    &__title{
+        font-size: 30px;
+        font-weight: bold;
+        color: #484848;
+        max-width: 510px;
+        line-height: 1.4;
+
+        @media screen and (max-width: $bp-LG){
+            font-size: 23px;
+        }
+    }
+
+    &__form{
+        padding-top: 15px;
+        max-width: 450px;
+
+        @media screen and (max-width: $bp-LG){
+            max-width: 310px;
+        }
+
+        label{
+            font-size: 19px;
+            color: #484848;
+            margin-bottom: 2px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 17px;
+            }
+        }
+
+        label.error{
+            color: $color-secondary;
+            font-size: 12px;
+            margin-bottom: 20px;
+            margin-top: -15px;
+        }
+        
+        input{
+            width: 100%;
+            border: 1px solid rgba(0,0,0,.4);
+            background-color: #fff;
+            height: 54px;
+            margin-bottom: 20px;
+        }
+
+        .submit{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1.3px solid $color-primary;
+            text-align: center;
+            padding: 17px 0;
+            width: 220px;
+            font-weight: 400;
+            background-color: #fff;
+            margin-top: 40px;
+            
+            @media screen and (max-width: $bp-LG){
+                width: 190px;
+                margin-top: 10px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                padding: 13px 0;
+            }
+    
+            &:hover{
+                .arrow{
+                    opacity: 1;
+                }
+    
+                .text{
+                    margin-right: 10px;
+                }
+            }
+    
+            .text{
+                display: block;
+                font-size: 29px;
+                color: $color-primary;
+                transition: all 0.4s;
+                margin-bottom: 9;
+    
+                @media screen and (max-width: $bp-MD){
+                    font-size: 24px;
+                }
+    
+            }
+    
+            .arrow{
+                position: absolute;
+                right: -1px;
+                bottom: -1px;
+                width: 48px;
+                opacity: 0;
+                transition: all 0.4s;
+            }
+        }
+    }
+}
