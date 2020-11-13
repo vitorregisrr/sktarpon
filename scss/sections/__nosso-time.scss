@@ -153,7 +153,7 @@
         bottom: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #fff;
+        background-color: $color-secondary;
         pointer-events: none;
         opacity: 0;
         z-index: 10;
@@ -167,6 +167,29 @@
         &[data-visible="true"] {
             opacity: 1;
             pointer-events: all;
+        }
+
+        &::after{
+            content: '';
+            background-color: #fff;
+            width: 78vw;
+            height: 78vw;
+            position: absolute;
+            left: -30%;
+            transform: translateY(-20%);
+            z-index: -1;
+            top: 0;
+            border-radius: 50%;
+
+            @media screen and (max-width: $bp-XL){
+                width: 94vw;
+                height: 94vw;
+                left: -40%;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                display: none;
+            }
         }
 
         .shape-left {
@@ -208,12 +231,15 @@
         }
 
         .right {
-            background-color: #ED544C;
             height: 100%;
             padding-top: 80px;
+        
+            @media screen and (max-width: $bp-LG){
+                padding-top: 80px;
+            }
 
             @media screen and (min-width: $bp-LG) and (max-height: 680px){
-                padding-top: 30px;
+                padding-top: 0;
             }
             
             .depoimento {
@@ -222,6 +248,10 @@
                 font-weight: 600;
                 font-style: italic;
                 color: #fff;
+
+                @media screen and (max-width: $bp-XL){
+                    font-size: 30px;
+                }
 
                 @media screen and (max-width: $bp-LG){
                     font-size: 22px;
@@ -232,13 +262,19 @@
                 &::after {
                     content: "“";
                     position: absolute;
-                    left: -170px;
-                    top: -130px;
+                    left: -200px;
+                    top: 120px;
                     color: $color-primary;
-                    font-size: 310px;
+                    font-size: 380px;
                     font-weight: bold;
                     font-style: normal;
                     line-height: 0;
+
+                    @media screen and (max-width: $bp-XL){
+                        font-size: 320px;
+                        left: -180px;
+                        top: 110px;
+                    }
 
                     @media screen and (max-width: $bp-LG){
                         font-size: 120px;
@@ -251,7 +287,7 @@
                     content: "”";
                     position: absolute;
                     right: 160px;
-                    bottom: -170px;
+                    bottom: -40px;
                     color: $color-primary;
                     font-size: 230px;
                     font-weight: bold;
@@ -295,6 +331,7 @@
                     padding-right: 20px;
                     padding-top: 40px;
                     padding-left: 20px;
+                    background-color: #fff;
                 }
 
             }
@@ -328,7 +365,7 @@
 
                 @media screen and (max-width: $bp-LG){
                     margin-top: 0;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
                 }
     
 

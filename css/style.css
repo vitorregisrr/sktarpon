@@ -1697,7 +1697,7 @@ textarea.form-control {
 }
 
 .interna-header__caption.imprensa {
-  padding-top: 250px;
+  padding-top: 220px;
   padding-left: 210px;
 }
 
@@ -1839,6 +1839,36 @@ textarea.form-control {
   .interna-header__caption .title .shape-bottom {
     bottom: -400px;
     left: 450px;
+  }
+}
+
+.interna-header__caption .title .shape-top {
+  position: absolute;
+  left: -140px;
+  top: -120px;
+}
+
+@media screen and (max-width: 1200px) {
+  .interna-header__caption .title .shape-top {
+    width: 160px;
+    left: -110px;
+    top: -100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interna-header__caption .title .shape-top {
+    width: 100px;
+    left: -53px;
+    top: -60px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .interna-header__caption .title .shape-top {
+    width: 130px;
+    left: -80px;
+    top: -84px;
   }
 }
 
@@ -2327,7 +2357,7 @@ textarea.form-control {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #ED544C;
   pointer-events: none;
   opacity: 0;
   z-index: 10;
@@ -2344,6 +2374,33 @@ textarea.form-control {
 .nosso-time__modal[data-visible="true"] {
   opacity: 1;
   pointer-events: all;
+}
+
+.nosso-time__modal::after {
+  content: '';
+  background-color: #fff;
+  width: 78vw;
+  height: 78vw;
+  position: absolute;
+  left: -30%;
+  transform: translateY(-20%);
+  z-index: -1;
+  top: 0;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-time__modal::after {
+    width: 94vw;
+    height: 94vw;
+    left: -40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal::after {
+    display: none;
+  }
 }
 
 .nosso-time__modal .shape-left {
@@ -2394,14 +2451,19 @@ textarea.form-control {
 }
 
 .nosso-time__modal .right {
-  background-color: #ED544C;
   height: 100%;
   padding-top: 80px;
 }
 
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .right {
+    padding-top: 80px;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-height: 680px) {
   .nosso-time__modal .right {
-    padding-top: 30px;
+    padding-top: 0;
   }
 }
 
@@ -2411,6 +2473,12 @@ textarea.form-control {
   font-weight: 600;
   font-style: italic;
   color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-time__modal .right .depoimento {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2424,13 +2492,21 @@ textarea.form-control {
 .nosso-time__modal .right .depoimento::after {
   content: "“";
   position: absolute;
-  left: -170px;
-  top: -130px;
+  left: -200px;
+  top: 120px;
   color: #014852;
-  font-size: 310px;
+  font-size: 380px;
   font-weight: bold;
   font-style: normal;
   line-height: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .nosso-time__modal .right .depoimento::after {
+    font-size: 320px;
+    left: -180px;
+    top: 110px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2445,7 +2521,7 @@ textarea.form-control {
   content: "”";
   position: absolute;
   right: 160px;
-  bottom: -170px;
+  bottom: -40px;
   color: #014852;
   font-size: 230px;
   font-weight: bold;
@@ -2495,6 +2571,7 @@ textarea.form-control {
     padding-right: 20px;
     padding-top: 40px;
     padding-left: 20px;
+    background-color: #fff;
   }
 }
 
@@ -2529,7 +2606,7 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .nosso-time__modal .content .social {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -2719,6 +2796,7 @@ textarea.form-control {
 }
 
 .imprensa {
+  position: relative;
   padding-left: 46px;
   padding-bottom: 70px;
 }
@@ -2727,6 +2805,21 @@ textarea.form-control {
   .imprensa {
     padding-left: 0;
     padding-bottom: 60px;
+  }
+}
+
+.imprensa .shape-left {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  width: 180px;
+}
+
+@media screen and (max-width: 992px) {
+  .imprensa .shape-left {
+    width: 100px;
+    z-index: -1;
+    top: 430px;
   }
 }
 
@@ -2999,7 +3092,7 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   height: 78px;
-  width: 65px;
+  width: 72px;
   background: #fff;
   border: 0.7px solid #0f7d8b;
   border-width: 1.7px 1px 1.7px 1px;

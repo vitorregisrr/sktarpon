@@ -17,7 +17,7 @@
         color: #fff;
 
         &.imprensa{
-            padding-top: 250px;
+            padding-top: 220px;
             padding-left: 210px;
         }
 
@@ -136,6 +136,30 @@
                 @media screen and (min-height: 900px){
                     bottom: -400px;
                     left: 450px;
+                }
+            }
+
+            .shape-top {
+                position: absolute;
+                left: -140px;
+                top: -120px;
+
+                @media screen and (max-width: $bp-XL){
+                    width: 160px;
+                    left: -110px;
+                    top: -100px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    width: 100px;
+                    left: -53px;
+                    top: -60px;
+                }
+
+                @media screen and (min-height: 900px){
+                    width: 130px;
+                    left: -80px;
+                    top: -84px;
                 }
             }
         }
