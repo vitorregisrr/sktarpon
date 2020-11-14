@@ -333,9 +333,10 @@
         }
 
         @media screen and (max-width: $bp-LG){
-            margin-bottom: 23px;
-            margin-top: -15px;
+            margin-bottom: 5px;
+            margin-top: -20px;
             margin-left: 0;
+            width: 100% !important;
         }
     }
 
