@@ -14,6 +14,12 @@
         } else {
             scrollTopBtn.removeClass('show');
         }
+
+        if ($(window).scrollTop() > 340) {
+            $('#home-banner-more').css("opacity", 1 - $(window).scrollTop() / $('#home-banner-more').height());
+        } else {
+            $('#home-banner-more').css("opacity", 1);
+        }
     });
 
      //Smooth Scrooling

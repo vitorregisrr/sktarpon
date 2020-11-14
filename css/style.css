@@ -1588,7 +1588,13 @@ textarea.form-control {
 .home-feed__list .noticia {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 19px;
+}
+
+@media screen and (max-width: 992px) {
+  .home-feed__list .noticia {
+    margin-bottom: 12px;
+  }
 }
 
 .home-feed__list .noticia img {
@@ -2717,14 +2723,24 @@ textarea.form-control {
   width: 82%;
   margin: 50px 0;
   padding: 44px 40px;
-  padding-left: 55px;
+  padding-left: 0;
   margin-left: auto;
+}
+
+.carreiras__banner .owl-carousel .item {
+  padding-left: 85px;
+}
+
+@media screen and (max-width: 992px) {
+  .carreiras__banner .owl-carousel .item {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .carreiras__banner {
     width: 95%;
-    padding: 20px;
+    padding: 0;
     margin: 20px 0;
     margin-left: auto;
   }

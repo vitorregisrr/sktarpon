@@ -50,7 +50,26 @@
         slideBy: 3,
         dragEndSpeed: 700,
         smartSpeed: 500,
+        startPosition: 0
+    });
+
+    const carreirasCarousel = $(".owl-carousel.carreiras__carousel ");
+    carreirasCarousel.owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        center: false,
+        dots: false,
+        nav: false,
+        navContainer: '#ecossistema-nav',
+        slideBy: 1,
+        slideSpeed: 4900,
+        smartSpeed: 4000,
         startPosition: 0,
+        autoplay: true,
+        autoplayTimeout: 2800,
+        autoHeight: true,
+        autoplayHoverPause: false
     });
 
     window.dispatchEvent(new Event('resize'));

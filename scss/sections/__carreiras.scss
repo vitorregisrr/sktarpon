@@ -17,14 +17,25 @@
         width: 82%;
         margin: 50px 0;
         padding: 44px 40px;
-        padding-left: 55px;
+        padding-left: 0;
         margin-left: auto;
+
+        .owl-carousel{
+            .item{
+                padding-left: 85px;
+
+                @media screen and (max-width: $bp-LG){
+                    padding: 20px;
+                }
+            }
+        }
 
         @media screen and (max-width: $bp-LG){
             width: 95%;
-            padding: 20px;
+            padding: 0;
             margin: 20px 0;
             margin-left: auto;
+
         }
        
         .title{

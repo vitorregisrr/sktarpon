@@ -228,7 +228,11 @@
         .noticia{
             display: flex;
             align-items: center;
-            margin-bottom: 5px;
+            margin-bottom: 19px;
+            
+            @media screen and (max-width: $bp-LG){
+                margin-bottom: 12px;
+            }
             
             img{
                 width: 50px;
