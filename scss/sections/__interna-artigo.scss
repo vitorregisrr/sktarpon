@@ -1,6 +1,7 @@
 .artigo{
     padding-top: 120px;
     padding-bottom: 70px;
+    overflow: hidden;
 
     @media screen and (max-width: $bp-XL){
         padding-top: 90px;
@@ -123,6 +124,8 @@
 
     &__social{
         display: flex;
+        align-content: center;
+        justify-content: flex-start;
         padding-top: 18px;
 
         .share-icon{
