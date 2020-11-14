@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    // Home Carousel //
+    // Deps Carousel //
     const depsCarousel = $(".owl-carousel.home-depoimentos__carousel");
     depsCarousel.owlCarousel({
         loop: true,
@@ -32,6 +32,25 @@
                 items: 3
             }
         }
+    });
+
+    // Ecossistema Carousel //
+    const ecossistemaCarousel = $(".owl-carousel.ecossistema__carousel");
+    ecossistemaCarousel.owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        center: false,
+        dots: false,
+        nav: true,
+        navText: [
+            "<i class='owl-nav chevron-left'>", "<i class='owl-nav chevron-right'>"
+        ],
+        navContainer: '#ecossistema-nav',
+        slideBy: 3,
+        dragEndSpeed: 700,
+        smartSpeed: 500,
+        startPosition: 0,
     });
 
     window.dispatchEvent(new Event('resize'));
