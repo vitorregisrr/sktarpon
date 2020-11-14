@@ -74,11 +74,16 @@
                 margin-left: 118px;
                 margin-top: -14px;
                 width: 137px;
+
                 @media screen and (max-width: $bp-LG) {
                     margin: 0;
                     width: 93px;
                     margin-left: 11px;
                     margin-top: 8px;
+                }
+
+                @media screen and (max-height: 690px) and (min-width: $bp-LG){
+                   width: 110px;
                 }
             }
         }
@@ -198,6 +203,10 @@
             letter-spacing: 0.4px;
             margin-bottom: 12px;
 
+            @media screen and (max-height: 690px) and (min-width: $bp-LG){
+                font-size: 14px;
+            }
+
             a {
                 position: relative;
                 transition: all 0.6s;
@@ -231,6 +240,10 @@
 
         @media screen and (max-width: $bp-LG){
             padding-top: 30px;
+        }
+
+        @media screen and (max-height: 690px) and (min-width: $bp-LG){
+            padding-top: 20px;
         }
         
         .langs {

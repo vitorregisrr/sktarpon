@@ -447,6 +447,12 @@ b {
   }
 }
 
+@media screen and (max-height: 690px) and (min-width: 992px) {
+  .main-nav.active .main-nav__brand img {
+    width: 110px;
+  }
+}
+
 .main-nav.active .main-nav__inner {
   pointer-events: all;
   opacity: 1;
@@ -579,6 +585,12 @@ b {
   margin-bottom: 12px;
 }
 
+@media screen and (max-height: 690px) and (min-width: 992px) {
+  .main-nav__links li {
+    font-size: 14px;
+  }
+}
+
 .main-nav__links li a {
   position: relative;
   transition: all 0.6s;
@@ -613,6 +625,12 @@ b {
 @media screen and (max-width: 992px) {
   .main-nav__contacts {
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-height: 690px) and (min-width: 992px) {
+  .main-nav__contacts {
+    padding-top: 20px;
   }
 }
 
