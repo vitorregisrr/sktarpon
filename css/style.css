@@ -2489,8 +2489,24 @@ textarea.form-control {
 }
 
 .nosso-time__modal .right {
+  position: relative;
   height: 100%;
   padding-top: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .nosso-time__modal .right::after {
+    content: '';
+    background-color: #fff;
+    width: 222vw;
+    height: 222vw;
+    position: absolute;
+    left: -54%;
+    transform: translateY(-210vw);
+    z-index: -1;
+    top: 0;
+    border-radius: 50%;
+  }
 }
 
 @media screen and (max-width: 992px) {
