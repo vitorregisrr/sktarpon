@@ -3234,6 +3234,16 @@ textarea.form-control {
   height: 40px;
 }
 
+.ecossistema__brand.md {
+  height: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .ecossistema__brand.md {
+    height: 40px;
+  }
+}
+
 .ecossistema__brand.lg {
   height: 140px;
 }
@@ -3262,6 +3272,7 @@ textarea.form-control {
 
 .ecossistema__desc p {
   max-width: 580px;
+  margin-bottom: 30px;
 }
 
 .ecossistema__carousel-wrapper {
@@ -3478,8 +3489,8 @@ textarea.form-control {
   width: 82%;
   background-color: #ED544C;
   margin-left: auto;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-top: 45px;
+  margin-bottom: 50px;
   padding: 50px;
 }
 
@@ -3495,6 +3506,7 @@ textarea.form-control {
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 0;
+  max-width: 750px;
 }
 
 @media screen and (max-width: 992px) {
@@ -3525,6 +3537,19 @@ textarea.form-control {
     left: -40px;
     width: 80px;
     top: -80px;
+  }
+}
+
+.ecossistema .omega-banner {
+  width: 100%;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .ecossistema .omega-banner {
+    margin-bottom: 23px;
+    margin-top: 0;
   }
 }
 
