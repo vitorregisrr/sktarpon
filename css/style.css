@@ -3164,6 +3164,7 @@ textarea.form-control {
 .ecossistema {
   position: relative;
   padding-top: 110px;
+  padding-bottom: 70px;
 }
 
 .ecossistema .shape-obt {
@@ -3229,6 +3230,10 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
+.ecossistema__brand.sm {
+  height: 40px;
+}
+
 .ecossistema__brand.lg {
   height: 140px;
 }
@@ -3243,6 +3248,10 @@ textarea.form-control {
 .ecossistema__desc {
   color: #484848;
   font-size: 27px;
+}
+
+.ecossistema__desc.lg p {
+  max-width: 720px;
 }
 
 @media screen and (max-width: 992px) {
@@ -3267,20 +3276,6 @@ textarea.form-control {
 @media screen and (max-width: 992px) {
   .ecossistema__carousel-wrapper {
     padding-bottom: 30px;
-  }
-}
-
-.ecossistema__carousel-wrapper .shape-left {
-  position: absolute;
-  top: -210px;
-  left: -20px;
-}
-
-@media screen and (max-width: 992px) {
-  .ecossistema__carousel-wrapper .shape-left {
-    left: -40px;
-    width: 80px;
-    top: -80px;
   }
 }
 
@@ -3477,6 +3472,60 @@ textarea.form-control {
   width: 55px;
   opacity: 0;
   transition: all 0.4s;
+}
+
+.ecossistema__banner-right {
+  width: 82%;
+  background-color: #ED544C;
+  margin-left: auto;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  padding: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .ecossistema__banner-right {
+    width: 95%;
+    padding: 25px;
+  }
+}
+
+.ecossistema__banner-right .title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .ecossistema__banner-right .title {
+    font-size: 22px;
+  }
+}
+
+.ecossistema .shape-left {
+  position: absolute;
+  top: -210px;
+  left: -20px;
+  z-index: -1;
+}
+
+.ecossistema .shape-left.bot {
+  top: 160vh;
+}
+
+@media screen and (max-width: 992px) {
+  .ecossistema .shape-left.bot {
+    top: 155vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ecossistema .shape-left {
+    left: -40px;
+    width: 80px;
+    top: -80px;
+  }
 }
 
 body {

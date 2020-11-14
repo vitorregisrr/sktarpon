@@ -1,6 +1,7 @@
 .ecossistema{
     position: relative;
     padding-top: 110px;
+    padding-bottom: 70px;
 
     .shape-obt{
         position: absolute;
@@ -53,6 +54,10 @@
         margin-top: 25px;
         margin-bottom: 30px;
 
+        &.sm{
+            height: 40px;
+        }
+
         &.lg{
             height: 140px;
 
@@ -66,6 +71,12 @@
     &__desc{
         color: #484848;
         font-size: 27px;
+
+        &.lg{
+            p{
+                max-width: 720px;
+            }
+        }
 
         @media screen and (max-width: $bp-LG){
             font-size: 19px;
@@ -86,18 +97,6 @@
 
         @media screen and (max-width: $bp-LG){ 
             padding-bottom: 30px;
-        }
-
-        .shape-left{
-            position: absolute;
-            top: -210px;
-            left: -20px;
-
-            @media screen and (max-width: $bp-LG){
-                left: -40px;
-                width: 80px;
-                top: -80px;
-            }
         }
 
         .title{
@@ -190,6 +189,7 @@
             @media screen and (max-width: $bp-LG){ 
                 width: 150px !important;
             }
+            
 
             &.lg{
                 width: 210px !important;
@@ -274,6 +274,51 @@
                 transition: all 0.4s;
             }
         }
+    }
 
+    &__banner-right{
+        width: 82%;
+        background-color: $color-secondary;
+        margin-left: auto;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        padding: 50px;
+
+        @media screen and (max-width: $bp-LG){
+            width: 95%;
+            padding: 25px;
+        }
+
+        .title{
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 0;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 22px;
+            }
+        }
+    }
+
+    .shape-left{
+        position: absolute;
+        top: -210px;
+        left: -20px;
+        z-index: -1;
+
+        &.bot{
+            top: 160vh;
+
+            @media screen and (max-width: $bp-LG){
+                top: 155vh;
+            }
+        }
+
+        @media screen and (max-width: $bp-LG){
+            left: -40px;
+            width: 80px;
+            top: -80px;
+        }
     }
 }
