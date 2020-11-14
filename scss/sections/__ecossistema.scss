@@ -2,11 +2,21 @@
     position: relative;
     padding-top: 110px;
     padding-bottom: 70px;
+    max-width: 100vw;
+    overflow: hidden;
+
+    @media screen and (max-width: $bp-XL){
+        padding-bottom: 20px;
+    }
 
     .shape-obt{
         position: absolute;
         right: 0;
         top: 140px;
+
+        @media screen and (max-width: $bp-XL){
+            width: 190px;
+        }
 
         @media screen and (max-width: $bp-LG){
             width: 100px;
@@ -54,6 +64,11 @@
         height: 110px;
         margin-top: 25px;
         margin-bottom: 30px;
+
+        @media screen and (max-width: $bp-LG){
+            height: 70px;
+            margin-bottom: 20px;
+        }
 
         &.sm{
             height: 40px;
@@ -230,59 +245,6 @@
                 }
             }
         }
-
-        .more{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1.3px solid $color-primary;
-            text-align: center;
-            padding: 23px 0;
-            width: 230px;
-            font-weight: 400;
-            background-color: #fff;
-            margin-top: 55px;
-            
-            @media screen and (max-width: $bp-MD){
-                padding: 13px 0;
-                width: 190px;
-                margin-top: 30px;
-            }
-    
-            &:hover{
-                .arrow{
-                    opacity: 1;
-                }
-    
-                .text{
-                    margin-right: 10px;
-                }
-            }
-    
-            .text{
-                display: block;
-                font-size: 30px;
-                color: $color-primary;
-                transition: all 0.4s;
-                margin-bottom: 9;
-                z-index: 4;
-    
-                @media screen and (max-width: $bp-MD){
-                    font-size: 24px;
-                }
-    
-            }
-    
-            .arrow{
-                position: absolute;
-                right: -1px;
-                bottom: -1px;
-                width: 55px;
-                opacity: 0;
-                transition: all 0.4s;
-            }
-        }
     }
 
     &__banner-right{
@@ -325,6 +287,15 @@
             }
         }
 
+        &.md{
+            top: 110vh;
+
+            @media screen and (max-width: $bp-LG){
+                width: 70px;
+                top: 155vh;
+            }
+        }
+
         @media screen and (max-width: $bp-LG){
             left: -40px;
             width: 80px;
@@ -334,13 +305,183 @@
 
     .omega-banner{
         display: block;
-        width: 100% !important;
-        margin-top: -150px;
+        width: 97% !important;
+        margin-top: -170px;
         margin-bottom: 50px;
+        margin-left: -2.4%;
+
+        @media screen and (max-width: $bp-XL){
+            margin-top: -20px;
+        }
 
         @media screen and (max-width: $bp-LG){
             margin-bottom: 23px;
             margin-top: 0;
+            margin-left: 0;
         }
+    }
+
+    .tarpon-banner{
+        display: block;
+        width: 110% !important;
+        margin-top: -160px;
+        margin-bottom: 50px;
+        margin-left: -9.4%;
+
+        @media screen and (max-width: $bp-XL){
+            margin-top: -50px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            margin-bottom: 23px;
+            margin-top: -15px;
+            margin-left: 0;
+        }
+    }
+
+    .more{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1.3px solid $color-primary;
+        text-align: center;
+        padding: 23px 0;
+        width: 230px;
+        font-weight: 400;
+        background-color: #fff;
+        margin-top: 55px;
+        
+        @media screen and (max-width: $bp-MD){
+            padding: 13px 0;
+            width: 190px;
+            margin-top: 30px;
+        }
+
+        &:hover{
+            .arrow{
+                opacity: 1;
+            }
+
+            .text{
+                margin-right: 10px;
+            }
+        }
+
+        .text{
+            display: block;
+            font-size: 30px;
+            color: $color-primary;
+            transition: all 0.4s;
+            margin-bottom: 9;
+            z-index: 4;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 24px;
+            }
+
+        }
+
+        .arrow{
+            position: absolute;
+            right: -1px;
+            bottom: -1px;
+            width: 55px;
+            opacity: 0;
+            transition: all 0.4s;
+        }
+    }
+
+    .shape-bottom{
+        display: block;
+        width: 46%;
+        margin-left: auto;
+
+        @media screen and (max-width: $bp-LG){
+            width: 65%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer-more{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 15px;
+
+        @media screen and (max-width: $bp-LG){
+            flex-direction: column;
+            padding-top: 30px;
+        }
+
+        .title{
+            display: block;
+            margin-bottom: 0;
+            font-weight: bold;
+            color: #484848;
+            margin-left: 40px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 25px;
+                text-align: center;
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+
+        .more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 1.3px solid $color-primary;
+            text-align: center;
+            padding: 35px 0;
+            width: 120px;
+            font-weight: 400;
+            background-color: #fff;
+            margin-top: 0;
+
+            @media screen and (max-width: $bp-LG){
+                width: 90px;
+                padding: 25px 0;
+            }
+    
+            &:hover{
+                .arrow{
+                    opacity: 1;
+                }
+    
+                .text{
+                    margin-right: 10px;
+                }
+            }
+    
+            .text{
+                display: block;
+                font-size: 30px;
+                color: $color-primary;
+                transition: all 0.4s;
+                margin-bottom: 9;
+                z-index: 4;
+    
+                @media screen and (max-width: $bp-MD){
+                    font-size: 24px;
+                }
+    
+            }
+    
+            .arrow{
+                position: absolute;
+                right: -1px;
+                bottom: -1px;
+                width: 55px;
+                opacity: 0;
+                transition: all 0.4s;
+            }
+        }
+        
     }
 }
