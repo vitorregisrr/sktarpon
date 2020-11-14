@@ -1757,6 +1757,12 @@ textarea.form-control {
   .interna-header__caption {
     padding-top: 240px;
   }
+  .interna-header__caption.imprensa {
+    padding-top: 280px;
+  }
+  .interna-header__caption.imprensa .title {
+    font-size: 60px;
+  }
 }
 
 @media screen and (min-height: 900px) {

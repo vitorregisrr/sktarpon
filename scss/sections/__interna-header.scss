@@ -72,6 +72,14 @@
 
         @media screen and (min-width: 380px) and (max-width: 430px){
             padding-top: 240px;
+
+            &.imprensa{
+                padding-top: 280px;
+
+                .title{
+                    font-size: 60px;
+                }
+            }
         }
 
         @media screen and (min-height: 900px){
