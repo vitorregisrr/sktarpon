@@ -3167,7 +3167,7 @@ textarea.form-control {
 }
 
 .imprensa__pagination {
-  padding-left: 22px;
+  padding-left: 0px;
   padding-top: 30px;
 }
 
@@ -4058,7 +4058,7 @@ textarea.form-control {
 @media screen and (max-width: 576px) {
   .sobre .shape-left {
     width: 60px;
-    top: 360px;
+    top: 395px;
   }
 }
 
