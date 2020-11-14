@@ -50,6 +50,7 @@
     }
 
     &__brand{
+        display: block;
         height: 110px;
         margin-top: 25px;
         margin-bottom: 30px;
@@ -332,7 +333,8 @@
     }
 
     .omega-banner{
-        width: 100%;
+        display: block;
+        width: 100% !important;
         margin-top: -150px;
         margin-bottom: 50px;
 
