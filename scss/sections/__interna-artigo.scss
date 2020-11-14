@@ -1,0 +1,153 @@
+.artigo{
+    padding-top: 120px;
+    padding-bottom: 70px;
+
+    @media screen and (max-width: $bp-XL){
+        padding-top: 90px;
+    }
+
+    @media screen and (max-width: $bp-LG){
+        padding-top: 120px;
+    }
+
+    &__back{
+        display: block;
+        margin-bottom: 70px;
+        padding-left: 10px;
+
+        @media screen and (max-width: $bp-XL){
+            margin-bottom: 60px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            margin-bottom: 30px;
+            padding-left: 0;
+        }
+
+        img{
+            @include transition();
+            width: 154px;
+
+            @media screen and (max-width: $bp-MD){
+                width: 120px;
+            }
+        }
+
+        &:hover{
+           img{
+                @include scale(1.1);
+           }
+        }
+    }
+
+    .content{
+        padding-left: 70px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-left: 0;
+        }
+    }
+
+    .obt-left{
+        position: absolute;
+        top: 104px;
+        left: -5%;
+
+        @media screen and (max-width: $bp-LG){
+            left: -25%;
+            top: 60px;
+            width: 90px;
+            opacity: .6;
+        }
+    }
+
+    .banner-img{
+        width: 100%;
+    }
+
+    &__title{
+        font-size: 28px;
+        color: #263843;
+        font-weight: bold;
+        margin-bottom: 21px;
+    }
+
+    &__desc{
+        font-size: 18px;
+
+        p{
+            max-width: 550px;
+        }
+    }
+
+    &__author{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        padding-bottom: 45px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-bottom: 30px;
+        }
+
+        & > div{
+            display: flex;
+            align-items: center;
+        }
+
+        .name{
+            color: $color-primary;
+            margin-left: 9px;
+            font-size: 17px;
+            margin-bottom: 0;
+        }
+
+        small{
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+            @media screen and (max-width: $bp-LG){
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+
+
+    &__social{
+        display: flex;
+        padding-top: 18px;
+
+        .share-icon{
+            width: 28px;
+            object-fit: contain;
+            margin-right: 13px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 23px;
+            }
+        }
+
+        .social-icon{
+            width: 40px;
+            margin-left: 4px;
+            object-fit: contain;
+            @include transition();
+
+            @media screen and (max-width: $bp-LG){
+                width: 34px;
+            }
+
+            &:hover{
+                @include scale(1.1);
+            }
+        }
+    }
+}
