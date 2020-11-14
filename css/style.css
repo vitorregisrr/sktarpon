@@ -2598,7 +2598,7 @@ textarea.form-control {
 .nosso-time__modal .right .depoimento::before {
   content: "”";
   position: absolute;
-  right: 160px;
+  right: 20px;
   bottom: -40px;
   color: #014852;
   font-size: 230px;
