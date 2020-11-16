@@ -16,7 +16,7 @@
         }
 
         if ($(window).scrollTop() > 200) {
-            $('#home-banner-more').css("opacity", 1 - $(window).scrollTop() / $('#home-banner-more').height() );
+            $('#home-banner-more').css("opacity", 1 - $(window).scrollTop() / ($('#home-banner-more').height() + 400) );
         } else {
             $('#home-banner-more').css("opacity", 1);
         }

@@ -63,11 +63,11 @@
         nav: false,
         navContainer: '#ecossistema-nav',
         slideBy: 1,
-        slideSpeed: 4900,
-        smartSpeed: 4000,
+        slideSpeed: 400,
+        smartSpeed: 7000,
         startPosition: 0,
         autoplay: true,
-        autoplayTimeout: 2800,
+        autoplayTimeout: 5000,
         autoHeight: true,
         autoplayHoverPause: false
     });
