@@ -2570,6 +2570,7 @@ textarea.form-control {
 @media screen and (min-width: 1800px) {
   .nosso-time__modal .right .depoimento {
     font-size: 42px;
+    max-width: 480px !important;
   }
 }
 
@@ -2700,8 +2701,8 @@ textarea.form-control {
 
 @media screen and (min-width: 1800px) {
   .nosso-time__modal .content .desc {
-    font-size: 23px;
-    max-width: 500px;
+    font-size: 24px;
+    max-width: 520px !important;
   }
 }
 

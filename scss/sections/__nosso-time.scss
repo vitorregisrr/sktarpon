@@ -278,6 +278,7 @@
 
                 @media screen and (min-width: 1800px){
                     font-size: 42px;
+                    max-width: 480px !important;
                 }
 
                 &::after {
@@ -390,8 +391,8 @@
                 max-width: 380px;
 
                 @media screen and (min-width: 1800px){
-                    font-size: 23px;
-                    max-width: 500px;
+                    font-size: 24px;
+                    max-width: 520px !important;
                 }
 
                 p {
