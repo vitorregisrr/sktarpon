@@ -2567,6 +2567,12 @@ textarea.form-control {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .nosso-time__modal .right .depoimento {
+    font-size: 42px;
+  }
+}
+
 .nosso-time__modal .right .depoimento::after {
   content: "“";
   position: absolute;
@@ -2592,6 +2598,13 @@ textarea.form-control {
     font-size: 120px;
     top: -20px;
     left: 20px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .nosso-time__modal .right .depoimento::after {
+    font-size: 440px;
+    left: -240px;
   }
 }
 
@@ -2661,6 +2674,12 @@ textarea.form-control {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 1800px) {
+  .nosso-time__modal .content .nome {
+    font-size: 60px;
+  }
+}
+
 .nosso-time__modal .content .cargo {
   font-size: 25px;
   color: #484848;
@@ -2668,9 +2687,22 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1800px) {
+  .nosso-time__modal .content .cargo {
+    font-size: 35px;
+  }
+}
+
 .nosso-time__modal .content .desc {
   font-size: 18px;
   max-width: 380px;
+}
+
+@media screen and (min-width: 1800px) {
+  .nosso-time__modal .content .desc {
+    font-size: 23px;
+    max-width: 500px;
+  }
 }
 
 .nosso-time__modal .content .desc p {
@@ -2691,6 +2723,12 @@ textarea.form-control {
 .nosso-time__modal .content .social img {
   width: 40px;
   transition: all 0.4s;
+}
+
+@media screen and (min-width: 1800px) {
+  .nosso-time__modal .content .social img {
+    width: 60px;
+  }
 }
 
 .nosso-time__modal .content .social img:hover {
